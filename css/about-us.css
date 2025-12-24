@@ -1,0 +1,318 @@
+:root {
+    --primaryColor: #DEB341;
+    --secondaryColor: #233F4D;
+    --tertioryColor: #0E1B21;
+    --secondaryColor2: #36657D;
+    --whiteColor: #FFFFFF;
+    --blackColor: #000000;
+    --hintTextColor: #626262;
+    --borderColor: #EEEEEE;
+    --cardColor: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* About Us Hero CSS */
+.about-us-hero {
+    background-image: url("../assets/about-us-hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: end;
+    height: 750px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 3rem;
+    border-radius: 50px;
+    margin-top: 120px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+
+.about-us-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: end;
+    align-items: end;
+}
+
+.about-us-heading-div {
+    width: 70%;
+}
+
+.about-us-heading-div h1 {
+    width: 70%;
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--whiteColor);
+}
+
+.about-us-highlight {
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+.about-us-sub-heading-div {
+    padding-top: 20px;
+    width: 60%;
+}
+
+.about-us-sub-heading-div {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--whiteColor);
+}
+
+.arrow-button img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Description Section CSS */
+.description-title {
+    text-align: start;
+}
+
+
+/* Mission Section CSS */
+.mission-section {
+    margin: 0 auto;
+    padding: 50px 80px;
+    background-color: color-mix(in srgb, var(--secondaryColor), transparent 90%);
+}
+
+.mission-tab {
+    display: flex;
+    background-color: var(--whiteColor);
+    width: fit-content;
+    padding: 2px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.mission-tab-inside {
+    padding: 10px 10px;
+    background-color: var(--whiteColor);
+    border-radius: 50px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.mission-tab-inside p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blackColor);
+}
+
+.mission-tab-inside.active {
+    background-color: var(--primaryColor);
+}
+
+.mission-tab-inside.active p {
+    color: var(--whiteColor);
+}
+
+
+.mission-content {
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mission-content-left {
+    width: 100%;
+    text-align: start;
+}
+
+.mission-title-div {
+    align-items: start;
+    text-align: start;
+}
+
+.mission-heading {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+
+.mission-highlight {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+.mission-subtitle1 {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+
+.mission-subtitle2 {
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--secondaryColor);
+}
+
+
+.mission-content-right {
+    justify-content: end;
+    text-align: right;
+}
+
+.mission-content-right img {
+    width: 70%;
+}
+
+/* Milestone Section CSS */
+
+.milestone-section {
+    padding: 50px 50px;
+    margin: 50px 80px;
+    background-image: linear-gradient(to bottom right, var(--secondaryColor), var(--secondaryColor2));
+    border-radius: 50px;
+     display: flex;
+  flex-direction: column;    
+  align-items: center;       
+  text-align: center;
+    
+}
+
+.milestone-heading {
+    width: 40%;
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--whiteColor);
+}
+
+.milestone-highlight {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+.milestone-subtitle {
+    padding-top: 20px;
+    width: 56%;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--whiteColor);
+}
+
+.explore-usecase2-btn {
+  margin-top: 30px;
+  padding: 5px;
+  padding-right: 30px;
+  height: 60px;
+  background-color: var(--whiteColor);
+  width: fit-content;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  border-radius: 1000px;
+}
+
+.explore-usecase2-btn img {
+  height: 100%;
+}
+
+.explore-usecase2-btn p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--secondaryColor);
+}
+
+.milestone-stats-grid {
+     padding-top: 30px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.milestone-stats {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    align-items: start;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: color-mix(in srgb, var(--whiteColor), transparent 90%);
+}
+
+.stats-line {
+    width: 3px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: var(--primaryColor);
+}
+
+.stats-data{
+    justify-content: start;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.stats-no {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--whiteColor);
+}
+
+.stats-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: color-mix(in srgb, var(--whiteColor), transparent 30%);;
+}
+
+
+/* Industry Leads Section CSS */
+
+.industry-leads-section {
+    margin: 50px 80px;
+     display: flex;
+  flex-direction: column;    
+  align-items: center;       
+  text-align: center;
+    
+}
+
+.industry-leads-heading {
+    width: 40%;
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--secondaryColor);
+}
+
+.industry-leads-highlight {
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--primaryColor);
+}
+
+.industry-leads-subtitle {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 56%;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--hintTextColor);
+}
+
+
+

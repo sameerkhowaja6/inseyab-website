@@ -1,0 +1,251 @@
+:root {
+    --primaryColor: #DEB341;
+    --secondaryColor: #233F4D;
+    --tertioryColor: #0E1B21;
+    --secondaryColor2: #36657D;
+    --whiteColor: #FFFFFF;
+    --blackColor: #000000;
+    --hintTextColor: #626262;
+    --borderColor: #EEEEEE;
+    --cardColor: #FAFAFA;
+}
+
+/* Contact Us Hero CSS */
+.contact-us-hero {
+    background-image: url("../assets/contact-us-hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: end;
+    height: 750px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 3rem;
+    border-radius: 50px;
+    margin-top: 120px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+
+.contact-us-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: end;
+    align-items: end;
+}
+
+.contact-us-heading-div {
+    width: 50%;
+}
+
+.contact-us-heading-div h1 {
+    width: 70%;
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--whiteColor);
+}
+
+.contact-us-highlight {
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+.contact-us-sub-heading-div {
+    padding-top: 20px;
+    width: 60%;
+}
+
+.contact-us-sub-heading-div {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--whiteColor);
+}
+
+.arrow-button img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Form Section CSS */
+
+.form-section {
+    padding: 50px 80px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+
+.form-section-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 200px;
+}
+
+.form-section-header-left {
+    justify-content: left;
+    text-align: left;
+}
+
+.form-section-heading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+
+.form-section-highlight {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+.form-section-subtitle1-div {
+    width: 60%;
+}
+
+.form-section-subtitle1 {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--hintTextColor);
+}
+
+.form-section-header-right {
+    justify-content: left;
+    text-align: left;
+}
+
+.form-section-subtitle2 {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--hintTextColor);
+}
+
+.form-content {
+    padding-top: 30px;
+    display: flex;
+
+}
+
+.form-content-left {
+    text-align: start;
+}
+
+.form-content-left img {
+    padding-right: 30px;
+     width: 100%;
+  object-fit: cover;    
+  display: block;
+}
+
+
+/* ===== FORM CSS ===== */
+.form-container {
+    width: 120%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 25px;
+    border: 1px solid color-mix(in srgb, var(--secondaryColor), transparent 90%);
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    text-align: start;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: var(--secondaryColor);
+}
+
+.group-1 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    gap: 30px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid color-mix(in srgb, var(--secondaryColor), transparent 90%);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+    min-height: 300px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.checkbox-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.checkbox-wrapper {
+    display: flex;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkbox-wrapper label {
+    cursor: pointer;
+    font-size: 16px;
+    color:var(--secondaryColor);
+    line-height: 1.5;
+}
+
+.checkbox-wrapper label a {
+    color:var(--primaryColor);
+    text-decoration: underline;
+}
+
+.checkbox-wrapper label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: var(--secondaryColor);
+    color: white;
+    padding: 12px 40px;
+    width: fit-content;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--primaryColor);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
