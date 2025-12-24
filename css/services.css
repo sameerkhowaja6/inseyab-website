@@ -1,0 +1,125 @@
+:root {
+    --primaryColor: #DEB341;
+    --secondaryColor: #233F4D;
+    --tertioryColor: #0E1B21;
+    --whiteColor: #FFFFFF;
+    --blackColor: #000000;
+    --hintTextColor: #626262;
+    --borderColor: #EEEEEE;
+    --cardColor: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url("../assets/services/service-header-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.heading-div {
+    padding: 50px 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading-div {
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--whiteColor);
+}
+
+.services-highlight {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+
+.sub-heading-div {
+    width: 65%;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--whiteColor);
+}
+
+.services-grid {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.service-item {
+    padding: 20px;
+    border: 1px solid var(--whiteColor);
+    border-radius: 25px;
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.service-item:hover {
+    border: 2px solid var(--primaryColor);
+    /* Glass effect */
+    background: var(--secondaryColor);
+    box-shadow: 0 8px 16px color-mix(in srgb, var(--primaryColor), transparent 50%);
+     transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    backdrop-filter 0.4s ease;
+}
+
+.service-title-div {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.service-title-div img {
+    width: 50px;
+    height: 50px;
+}
+
+.service-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.service-description {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--whiteColor);
+}

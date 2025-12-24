@@ -1,0 +1,123 @@
+:root {
+    --primaryColor: #DEB341;
+    --secondaryColor: #233F4D;
+    --tertioryColor: #0E1B21;
+    --whiteColor: #FFFFFF;
+    --blackColor: #000000;
+    --hintTextColor: #626262;
+    --borderColor: #EEEEEE;
+    --cardColor: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url("../assets/section-one-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.heading-div {
+    padding: 30px 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading-div {
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--whiteColor);
+}
+
+.solutions-highlight {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+
+.sub-heading-div {
+    width: 65%;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--whiteColor);
+}
+
+.solutions-grid {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    
+}
+
+.solution-item {
+    padding: 20px;
+    height: 250px;
+    justify-content: space-between;
+    border: 1px solid var(--whiteColor);
+    border-radius: 25px;
+
+}
+
+.solution-item:hover {
+    /* Glass effect */
+    background: color-mix(in srgb, var(--primaryColor), transparent 70%);;
+    box-shadow: 0 8px 16px color-mix(in srgb, var(--blackColor), transparent 84%);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: none;
+     transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    backdrop-filter 0.4s ease;
+}
+
+.solution-title-div {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.solution-title-div img {
+    width: 50px;
+    height: 50px;
+}
+
+.solution-description {
+    padding-top: 20px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--whiteColor);
+}

@@ -76,6 +76,11 @@
 }
 
 /* Description Section CSS */
+
+.more-about-inseyab img {
+    width: 10%;
+}
+
 .description-title {
     text-align: start;
 }

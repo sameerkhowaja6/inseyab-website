@@ -36,7 +36,7 @@
 }
 
 .contact-us-heading-div {
-    width: 50%;
+    width: 40%;
 }
 
 .contact-us-heading-div h1 {
@@ -187,7 +187,7 @@ textarea {
 textarea {
     resize: vertical;
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
 }
 
 .form-actions {
@@ -229,7 +229,7 @@ textarea {
     text-decoration: underline;
 }
 
-button {
+.submit-button {
     background-color: var(--secondaryColor);
     color: white;
     padding: 12px 40px;
@@ -240,7 +240,7 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+.submit-button:hover {
     background-color: var(--primaryColor);
 }
 
@@ -249,3 +249,215 @@ button:hover {
     font-size: 14px;
     margin-top: 5px;
 }
+
+/* Office Location Section */
+.office-location-section {
+    padding: 50px 80px;
+    background-color: color-mix(in srgb, var(--secondaryColor), transparent 90%);;
+}
+
+.location-tab {
+    display: flex;
+    background-color: var(--whiteColor);
+    width: fit-content;
+    padding: 2px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.location-tab-inside {
+    padding: 10px 10px;
+    background-color: var(--whiteColor);
+    border-radius: 50px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.location-tab-inside p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--blackColor);
+}
+
+.location-tab-inside.loc-active {
+    background-color: var(--primaryColor);
+}
+
+.location-tab-inside.loc-active p {
+    color: var(--whiteColor);
+}
+
+
+.location-content {
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-content-left {
+    width: 100%;
+    text-align: start;
+}
+
+.location-title-div {
+    align-items: start;
+    text-align: start;
+}
+
+.location-heading {
+    padding-bottom: 20px;
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--secondaryColor);
+}
+
+.location-highlight {
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--primaryColor);
+}
+
+.location-content-right {
+    justify-content: end;
+    text-align: right;
+}
+
+.location-content-right img {
+    width: 70%;
+    border-radius: 25px;
+}
+
+.details {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.details img {
+    width: 30px;
+    height: 30px;
+}
+
+.text-details {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--secondaryColor);
+}
+
+.details-line-break {
+    margin-top: 20px;
+    height: 2px;
+    width: 100%;
+    background-color: var(--secondaryColor2);
+}
+
+/* FAQ Section CSS */
+
+.contactus-faq-section {
+  padding: 50px 80px;
+}
+
+.container8 {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.title8-div {
+  text-align: center;
+}
+
+.heading8 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--secondaryColor);
+}
+
+.highlight9 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+.subtitle9-div {
+  width: 35%;
+  align-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.subtitle9 {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--hintTextColor);
+}
+
+.contactus-faq-section-2 {
+  max-width: 100%;
+  margin: auto;
+}
+
+.contactus-faq-item {
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.contactus-faq-item {
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.contactus-faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--secondaryColor);
+}
+
+.contactus-faq-question .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--cardColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.contactus-faq-item.active .icon {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+.contactus-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.contactus-faq-answer p {
+  padding: 0 0 18px 0;
+  color:var(--hintTextColor);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contactus-faq-item.active .contactus-faq-answer {
+  max-height: 200px;
+}
+
+

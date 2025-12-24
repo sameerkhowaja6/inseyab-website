@@ -1,0 +1,233 @@
+:root {
+    --primaryColor: #DEB341;
+    --secondaryColor: #233F4D;
+    --tertioryColor: #0E1B21;
+    --whiteColor: #FFFFFF;
+    --blackColor: #000000;
+    --hintTextColor: #626262;
+    --borderColor: #EEEEEE;
+    --cardColor: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url("../assets/success-stories-hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.heading-div {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.heading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--whiteColor);
+}
+
+.solutions-highlight {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+
+.sub-heading-div {
+    width: 65%;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--whiteColor);
+}
+
+/* Stories Section CSS */
+
+.stories-section {
+    padding: 50px 80px;
+}
+
+.stories-header {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+
+
+/* ============== */
+
+.category-card{
+    margin-top: 20px;
+  background-color: var(--whiteColor);
+  border-radius:var(--radius);
+  margin-bottom:.75rem;
+  overflow:hidden;
+  transition:box-shadow var(--speed);
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+  border-radius: 16px;
+}
+.category-card.active{
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.category-trigger{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 1.25rem;
+  background:none;
+  border:none;
+  font-size:1.1rem;
+  font-weight:600;
+  color:var(--primary);
+  cursor:pointer;
+}
+
+.story-category-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.story-category-header img {
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+}
+
+.category-card.active .story-category-header img {
+    width: 24px;
+    height: 24px;
+    transform: rotate(0deg);
+}
+
+.chevron{
+  width:.6rem;
+  height:.6rem;
+  border:solid var(--accent);
+  border-width:0 2px 2px 0;
+  transform:rotate(45deg);
+  transition:transform var(--speed);
+}
+.category-card.active .chevron{
+  transform:rotate(-135deg);
+}
+.category-panel{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height var(--speed) ease;
+  padding:0 1.25rem;
+}
+.category-card.active .category-panel{
+  max-height:80rem;
+  padding-bottom:1.25rem;
+}
+
+/* ======== story-card-grid =========== */
+.story-card-grid {
+    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+}
+.story-card {
+    width: 100%;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.story-card img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.story-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--blackColor);
+    line-height: 1.5;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: calc(1.5em * 2); 
+}
+
+.story-description {
+     font-size: 18px;
+  font-weight: 500;
+  color: var(--hintTextColor);
+  line-height: 1.5;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: calc(1.5em * 3); 
+}
+
+.story-link {
+    text-decoration: none;
+}
+
+
+.readmore-btn {
+  margin-top: 10px;
+  padding: 5px;
+  padding-right: 30px;
+  height: 60px;
+  background-color: var(--secondaryColor);
+  width: fit-content;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  border-radius: 1000px;
+}
+
+.readmore-btn img {
+    width: 50px;
+    height: 50px;
+  height: 100%;
+}
+
+.readmore-btn p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--whiteColor);
+}

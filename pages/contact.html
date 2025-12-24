@@ -17,12 +17,12 @@
         <nav class="nav2 nav">
             <a href="../index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="pages/solution.html">Solutions</a>
-            <a href="">Services</a>
-            <a href="">Industries</a>
-            <a href="">Success Stories</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="services.html">Services</a>
+            <a href="industries.html">Industries</a>
+            <a href="success-stories.html">Success Stories</a>
         </nav>
-        <a href="#">
+        <a href="">
             <div class="contactus"><Img src="../assets/contact-us-btn.png" alt="Contact Us" width="150"
                     loading="lazy"></Img></div>
         </a>
@@ -49,76 +49,286 @@
     <!-- End Contact Us Hero Section -->
 
     <!-- Form Section -->
-     <section class="form-section">
+    <section class="form-section animate-on-scroll">
         <div class="form-section-header">
-        <div class="form-section-header-left">
-          <div class="form-section-title-div">
-            <h1 class="form-section-heading">Contact <span class="form-section-highlight">Us</span></h1>
-          </div>
-          <div class="form-section-subtitle1-div">
-            <p class="form-section-subtitle1">Drive transformation with our AI-powered Solutions</p>
-          </div>
-        </div>
-        <div class="form-section-header-right">
-          <div class="form-section-subtitle2-div">
-            <p class="form-section-subtitle2">At Inseyab, we’re on a mission to make data work for everyone. Our AI-powered, no-code/low-code BI solutions are designed to help organizations unlock insights quickly and effortlessly—no technical expertise required.</p>
-          </div>
-        </div>
-      </div>
-      <div class="form-content">
-        <div class="form-content-left">
-            <img src="../assets/contact-us-left.png" alt="">
-        </div>
-         <div class="form-container">
-        <form id="contactForm">
-           <div class="group-1">
-             <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required>
+            <div class="form-section-header-left">
+                <div class="form-section-title-div">
+                    <h1 class="form-section-heading">Contact <span class="form-section-highlight">Us</span></h1>
+                </div>
+                <div class="form-section-subtitle1-div">
+                    <p class="form-section-subtitle1">Drive transformation with our AI-powered Solutions</p>
+                </div>
             </div>
-
-            <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required>
-            </div>
-
-           </div>
-         <div class="group-1">
-               <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
-         </div>
-
-            <div class="form-group">
-                <label for="message">Messages</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-
-            <div class="form-actions">
-                 <div class="checkbox-container">
-        <div class="checkbox-wrapper">
-            <input type="checkbox" id="termsCheckbox">
-            <label for="termsCheckbox">
-                I agree with <a href="#" onclick="alert('Terms of usage would open here')">terms of usage</a> and <a href="#" onclick="alert('Privacy policy would open here')">privacy policy</a>
-            </label>
+            <div class="form-section-header-right">
+                <div class="form-section-subtitle2-div">
+                    <p class="form-section-subtitle2">At Inseyab, we’re on a mission to make data work for everyone. Our
+                        AI-powered, no-code/low-code BI solutions are designed to help organizations unlock insights
+                        quickly and effortlessly—no technical expertise required.</p>
+                </div>
             </div>
         </div>
-                <button type="submit">Submit</button>
+        <div class="form-content">
+            <div class="form-content-left">
+                <img src="../assets/contact-us-left.png" alt="">
             </div>
-        </form>
-    </div>
-      </div>
-     </section>
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="group-1">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+
+                    </div>
+                    <div class="group-1">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Messages</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <div class="checkbox-container">
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" id="termsCheckbox">
+                                <label for="termsCheckbox">
+                                    I agree with <a href="#" onclick="alert('Terms of usage would open here')">terms of
+                                        usage</a> and <a href="#"
+                                        onclick="alert('Privacy policy would open here')">privacy policy</a>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="submit-button" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     <!-- End Form Section -->
 
-    <script src="../js/main.js"></script>
-    <script src="../js/contact-us.js"></script>
+    <!-- Office Location Section -->
+    <section class="office-location-section animate-on-scroll">
+        <div class="location-tab">
+            <div class="location-tab-inside loc-active" data-tab="head">
+                <p>HEAD OFFICE</p>
+            </div>
+            <div class="location-tab-inside" data-tab="regional">
+                <p>Regional Office</p>
+            </div>
+            <div class="location-tab-inside" data-tab="development">
+                <p>Development Office</p>
+            </div>
+        </div>
+        <div class="location-content">
+            <div class="location-content-left">
+                <h1 class="location-heading">
+                    <span id="tabTitle1">Head Office</span>
+                    <span class="location-highlight" id="tabTitle2">UAE</span>
+                </h1>
+                <!-- ====== Address ====== -->
+                <div class="content">
+                    <div class="details">
+                        <img src="../assets/icons/ic-address.png">
+                        <p class="text-details" id="address">Office# 29, 3rd Floor Tower 1, Mazyad Mall, Z9 MBZ, Abu
+                            Dhabi, United Arab Emirates</p>
+                    </div>
+                    <div class="details-line-break"></div>
+                </div>
+                <!-- ====== User ====== -->
+                <div class="content">
+                    <div class="details">
+                        <img src="../assets/icons/ic-user.png">
+                        <p class="text-details" id="contactPerson">Muhammad Saad Khan</p>
+                    </div>
+                    <div class="details-line-break"></div>
+                </div>
+                <!-- ====== Phone Number ====== -->
+                <div class="content">
+                    <div class="details">
+                        <img src="../assets/icons/ic-call.png">
+                        <p class="text-details" id="number">+971 8943 4937</p>
+                    </div>
+                    <div class="details-line-break"></div>
+                </div>
+                <!-- ====== Email ====== -->
+                <div class="content">
+                    <div class="details">
+                        <img src="../assets/icons/ic-email.png">
+                        <p class="text-details" id="email">saad@inseyab.com</p>
+                    </div>
+                    <div class="details-line-break"></div>
+                </div>
+            </div>
+
+            <div class="location-content-right">
+                <img src="../assets/uae.png" id="tabImage" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- End Office Location Section -->
+
+    <!-- FAQs Section -->
+    <section class="contactus-faq-section animate-on-scroll">
+        <div class="container-8">
+            <div class="title8-div">
+                <h1 class="heading8"><span class="highlight9">Frequently</span> Asked Questions</h1>
+            </div>
+            <div class="subtitle9-div">
+                <p class="subtitle9">Have a question? We’re here to help.</p>
+            </div>
+            <div class="contactus-faq-section-2">
+                <div class="contactus-faq-item">
+                    <button class="contactus-faq-question">
+                        <span>What does Inseyab do?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="contactus-faq-answer">
+                        <p>
+                            Inseyab provides AI-powered analytics and intelligence solutions to help
+                            organizations make data-driven decisions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contactus-faq-item">
+                    <button class="contactus-faq-question">
+                        <span>What industries do you serve?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="contactus-faq-answer">
+                        <p>
+                            We serve government, security, real estate, media monitoring, and
+                            enterprise analytics sectors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contactus-faq-item active">
+                    <button class="contactus-faq-question">
+                        <span>How does Inseyab handle data security?</span>
+                        <span class="icon">×</span>
+                    </button>
+                    <div class="contactus-faq-answer">
+                        <p>
+                            We follow strict enterprise-grade security and compliance protocols to
+                            ensure your data is protected, governed, and used responsibly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contactus-faq-item">
+                    <button class="contactus-faq-question">
+                        <span>Can I request a custom AI solution?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="contactus-faq-answer">
+                        <p>
+                            Yes, we provide tailored AI solutions based on your business needs and
+                            operational requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contactus-faq-item">
+                    <button class="contactus-faq-question">
+                        <span>How do I get started with Inseyab?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="contactus-faq-answer">
+                        <p>
+                            Contact our team through the website to schedule a demo or consultation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End FAQs Section -->
+
+    <!-- Footer Section -->
+    <section class="cta-footer-wrapper animate-on-scroll">
+
+        <!-- CTA CARD -->
+        <div class="cta-card">
+            <div class="cta-content">
+                <h4>
+                    Ready to Turn Data Into
+                    <span>Decisions?</span>
+                </h4>
+
+                <p class="cta-cotent-subtitle">
+                    Connect with our team to explore how Inseyab can help transform
+                    your operations with the power of AI.
+                </p>
+                <div class="explore-usecase-btn">
+                    <img src="../assets/icons/ic-arrow-up.png" alt="">
+                    <p class="btn-text">Talk to an Expert</p>
+                </div>
+            </div>
+
+            <div class="cta-illustration">
+                <img src="../assets/contact-us-illustration.png" alt="Illustration">
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer ">
+            <div class="footer-left">
+                <img src="../assets/logo.png" alt="Inseyab Logo" class="logo">
+                <p>
+                    Inseyab delivers AI-powered, no-code solutions that help enterprises
+                    and governments turn data into real-time, intelligent decisions.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Company</h4>
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About us</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Careers</a>
+                </div>
+
+                <div>
+                    <h4>Solutions</h4>
+                    <a href="solutions.html">AI & Data Solutions</a>
+                    <a href="industries.html">Industries We Serve</a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="footer-bottom">
+            <span>Inseyab Consulting & Information Solutions LLC. Copyright © 2023.</span>
+
+            <div class="social-icons">
+                <a href="#"><img src="../assets/icons/ic-twitter.png" alt=""></a>
+                <a href="#"><img src="../assets/icons/ic-linkedin.png" alt=""></a>
+                <a href="#"><img src="../assets/icons/ic-instagram.png" alt=""></a>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Footer Section -->
+
+    <script src="../js/main.js" defer></script>
+    <script src="../js/contact-us.js" defer></script>
 </body>
 
 </html>
