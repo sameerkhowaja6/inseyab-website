@@ -56,6 +56,7 @@ body.fade-out {
   width: 100%;
   padding: 1rem 2rem;
   background: transparent;
+  color: var(--secondaryColor);
   position: fixed;
   top: 0;
   left: 0;
@@ -66,12 +67,28 @@ body.fade-out {
   z-index: 100;
 }
 
-.header2.sticky {
+.header2.sticky{
   position: fixed;
   color: var(--whiteColor);
-  background: color-mix(in srgb, var(--whiteColor), transparent 0%);
+  background: color-mix(in srgb, var(--secondaryColor), transparent 0%);
 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header2 link color when sticky */
+.header2.sticky .nav2 a {
+  color: var(--whiteColor);
+}
+
+/* Hover state while sticky */
+.header2.sticky .nav2 a:hover {
+  color: var(--primaryColor);
+}
+
+/* Active link while sticky */
+.header2.sticky .nav2 a.active {
+  color: var(--primaryColor);
+  font-weight: 700;
 }
 
 .logo {

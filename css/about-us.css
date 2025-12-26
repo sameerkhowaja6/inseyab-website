@@ -81,6 +81,14 @@
     width: 10%;
 }
 
+.subtitle {
+    text-align: center;
+}
+
+.brands-img-div {
+    text-align: center;
+}
+
 .description-title {
     text-align: start;
 }

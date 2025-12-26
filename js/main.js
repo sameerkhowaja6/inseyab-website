@@ -1,12 +1,17 @@
 const header = document.getElementById('header');
+const logoImg = document.getElementById('logoImg');
+
+const defaultLogo = "../assets/logo-2.png";
+const stickyLogo = "../assets/logo.png";
+
 
 window.addEventListener('scroll', () => {
-  const heroHeight = header.offsetHeight;
-
-  if (window.scrollY > heroHeight - header.offsetHeight) {
+  if (window.scrollY > 50) {
     header.classList.add('sticky');
+    logoImg.src = stickyLogo;
   } else {
     header.classList.remove('sticky');
+    logoImg.src = defaultLogo;
   }
 });
 

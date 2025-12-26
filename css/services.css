@@ -123,3 +123,9 @@
     font-weight: normal;
     color: var(--whiteColor);
 }
+
+.service-anchor,
+.service-anchor::before,
+.service-anchor::after {
+    color: var(--whiteColor);
+    text-decoration: none;   }

@@ -1,0 +1,345 @@
+:root {
+    --primaryColor: #DEB341;
+    --secondaryColor: #233F4D;
+    --tertioryColor: #0E1B21;
+    --whiteColor: #FFFFFF;
+    --blackColor: #000000;
+    --hintTextColor: #626262;
+    --borderColor: #EEEEEE;
+    --cardColor: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url("../../assets/services/service-details-bg/s1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--blackColor);
+}
+
+.heading-div {
+    padding: 50px 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading-div {
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+.services-highlight {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+
+.sub-heading-div {
+    width: 70%;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--whiteColor);
+}
+
+/* Global CSS */
+.section-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--blackColor);
+}
+
+
+/* Implementation Section CSS */
+
+.implementation-section {
+    margin: 50px 80px;
+}
+
+.implementation-details {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    align-items: center;
+}
+
+.implLogo {
+    width: 300px;
+    height: 300px;
+}
+
+.implementation-content h5 {
+    padding-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--whiteColor);
+}
+
+.implementation-content p {
+    color: var(--whiteColor);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+/* Challenges Section CSS */
+.challenges-section {
+    padding: 0px 80px;
+}
+
+.category-card {
+    margin-top: 20px;
+    background-color: var(--whiteColor);
+    border-radius: var(--radius);
+    margin-bottom: .75rem;
+    overflow: hidden;
+    transition: box-shadow var(--speed);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    border-radius: 16px;
+}
+
+.category-card.active {
+    color: var(--whiteColor);
+    background-color: var(--secondaryColor);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+}
+
+.category-trigger {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.story-category-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.story-category-header img {
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+}
+
+
+.category-card.active .story-category-header img {
+    width: 24px;
+    height: 24px;
+    transform: rotate(0deg);
+}
+
+.chevron {
+    width: .6rem;
+    height: .6rem;
+    border: solid var(--accent);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    transition: transform var(--speed);
+}
+
+.category-card.active .chevron {
+    transform: rotate(-135deg);
+}
+
+.category-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--speed) ease;
+    padding: 0 1.25rem;
+}
+
+.category-card.active .category-panel {
+    max-height: 80rem;
+    padding-bottom: 1.25rem;
+}
+
+.story-category-header {
+    font-size: 16px;
+}
+
+/* Help Section CSS */
+.help-section {
+    padding: 50px 80px;
+}
+
+.help-cards-wrapper {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.help-card {
+    background-image: url("../../assets/help-card-bg.png");
+    background-color: var(--cardColor);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    border-radius: 8px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.help-card h3 {
+    font-size: 24px;
+    font-weight: 550;
+    color: var(--secondaryColor);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.help-card p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--hintTextColor);
+    line-height: 1.6;
+}
+
+/* Resource Capabilities Section CSS */
+/* Resource Capabilities Section */
+.resource-capabilities-section {
+    max-width:100%;
+    margin: 0 auto;
+    padding: 50px 80px;
+    background-color:var(--secondaryColor);
+}
+
+.resource-capabilities-section.hidden {
+    display: none;
+}
+
+.resource-section-header {
+    margin-bottom: 40px;
+}
+
+.resource-section-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.resource-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--whiteColor);
+    margin-bottom: 8px;
+}
+
+.resource-subtitle {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--whiteColor);
+    margin-bottom: 30px;
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.capability-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.capability-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.capability-name {
+    font-size: 16px;
+    font-weight: 600;
+    color:var(--whiteColor);
+}
+
+.capability-percentage {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primaryColor);
+    position: relative;
+}
+
+/* Custom Progress Bar */
+.progress-bar-container {
+    width: 100%;
+    height: 15px;
+    background-color: var(--whiteColor);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #d4a649 0%, #f0c66d 100%);
+    border-radius: 20px;
+    transition: width 1s ease-out;
+    position: relative;
+}
+
+.progress-bar-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: --whiteColor;
+}

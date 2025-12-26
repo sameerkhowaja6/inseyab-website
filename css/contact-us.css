@@ -169,7 +169,6 @@ label {
     height: fit-content;
     display: flex;
     margin: 0 auto;
-    width: 100%;
     gap: 30px;
 }
 
