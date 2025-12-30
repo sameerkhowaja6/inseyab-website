@@ -1,0 +1,169 @@
+:root {
+    --primaryColor: #DEB341;
+    --secondaryColor: #233F4D;
+    --tertioryColor: #0E1B21;
+    --whiteColor: #FFFFFF;
+    --blackColor: #000000;
+    --hintTextColor: #626262;
+    --borderColor: #EEEEEE;
+    --cardColor: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url("../../../assets/services/service-details-bg/s1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--blackColor);
+}
+
+.heading-div {
+    padding: 50px 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading-div {
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+.services-highlight {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+
+.sub-heading-div {
+    width: 80%;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--whiteColor);
+}
+
+/* Global CSS */
+.section-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+
+/* Value Section CSS */
+.value-section {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+}
+
+.value-props {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 20px;
+}
+
+.value-props li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.value-props li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--secondaryColor);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1;
+}
+
+
+/* Key Features Section CSS */
+.key-feature-section {
+    padding: 50px 80px;
+}
+
+.key-feature-wrapper {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.key-feature {
+    background-image: url("../../../assets/help-card-bg.png");
+    background-color: var(--cardColor);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+    border-radius: 25px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.features-subheading {
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--blackColor);
+}
+
+.key-feature img {
+    width: 50px;
+    height: 50px;
+}
+
+/* .key-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+} */
+
+.key-feature h3 {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    color: var(--secondaryColor);
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.key-feature p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--hintTextColor);
+    line-height: 1.6;
+}

@@ -20,7 +20,7 @@
 
 /* Hero Section */
 .hero {
-    background-image: url("../assets/section-one-bg.png");
+    background-image: url("../../assets/section-one-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -39,6 +39,7 @@
 }
 
 .heading-div {
+    width: 70%;
     align-content: center;
     text-align: center;
     margin: 0 auto;
@@ -47,7 +48,7 @@
 .heading {
     font-size: 4rem;
     font-weight: 600;
-    color: var(--whiteColor);
+    color: var(--primaryColor);
 }
 
 .solutions-highlight {
@@ -58,7 +59,7 @@
 
 
 .sub-heading-div {
-    width: 65%;
+    width: 80%;
     align-content: center;
     text-align: center;
     margin: 0 auto;
@@ -70,20 +71,23 @@
     color: var(--whiteColor);
 }
 
-.solutions-grid {
+.solutions-grid {    
+    width: 100%;
+    margin: 0 auto;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    justify-content: center;
+     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
     
 }
 
 .solution-item {
-    padding: 20px;
-    height: 250px;
-    justify-content: space-between;
+    padding: 15px;
+    height: 220px;
+    justify-content: start;
     border: 1px solid var(--whiteColor);
     border-radius: 25px;
 
@@ -91,7 +95,8 @@
 
 .solution-item:hover {
     /* Glass effect */
-    background: color-mix(in srgb, var(--primaryColor), transparent 70%);;
+    background: color-mix(in srgb, var(--secondaryColor), transparent 70%);
+    border: 1px solid var(--primaryColor);
     box-shadow: 0 8px 16px color-mix(in srgb, var(--blackColor), transparent 84%);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
@@ -103,27 +108,35 @@
 }
 
 .solution-title-div {
-    gap: 20px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 }
 
 .solution-title-div img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
-.solution-description {
+.solution-title {
     padding-top: 20px;
+    padding-bottom: 10px;
     text-align: left;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     color: var(--whiteColor);
 }
 
-.solution-anchor,
-.solution-anchor::before,
-.solution-anchor::after {
+
+.solution-description {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--whiteColor);
+}
+
+.solution-details-anchor,
+.solution-details-anchor::before,
+.solution-details-anchor::after {
     color: var(--whiteColor);
     text-decoration: none;   }

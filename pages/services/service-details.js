@@ -138,7 +138,5 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
-    // ✅ Call the function directly here (removed nested DOMContentLoaded)
     renderHelpCards(data);
 });
