@@ -243,6 +243,30 @@ textarea {
     background-color: var(--primaryColor);
 }
 
+.btn-loader {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    display: none;
+}
+
+.submit-button.loading .btn-text {
+    display: none;
+}
+
+.submit-button.loading .btn-loader {
+    display: block;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .error {
     color: red;
     font-size: 14px;

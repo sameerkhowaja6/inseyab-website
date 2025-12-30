@@ -106,7 +106,7 @@
                     <div class="form-actions">
                         <div class="checkbox-container">
                             <div class="checkbox-wrapper">
-                                <input type="checkbox" id="termsCheckbox">
+                                <input type="checkbox" id="termsCheckbox" required>
                                 <label for="termsCheckbox">
                                     I agree with <a href="#" onclick="alert('Terms of usage would open here')">terms of
                                         usage</a> and <a href="#"
@@ -114,7 +114,10 @@
                                 </label>
                             </div>
                         </div>
-                        <button class="submit-button" type="submit">Submit</button>
+                        <button class="submit-button" type="submit">
+                            <span class="btn-text">Submit</span>
+                            <span class="btn-loader"></span>
+                        </button>
                     </div>
                 </form>
             </div>
