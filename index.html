@@ -11,28 +11,67 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <header id="header" class="header">
-    <div class="logo"><Img src="assets/logo.png" alt="Company Logo" width="200" loading="lazy"></Img></div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="pages/about.html">About Us</a>
-      <a href="pages/solutions.html">Solutions</a>
-      <a href="pages/services.html">Services</a>
-      <a href="pages/industries.html">Industries</a>
-      <a href="pages/success-stories.html">Success Stories</a>
-    </nav>
-    <a href="pages/contact.html">
-      <div class="contactus"><Img src="assets/contact-us-btn.png" alt="Contact Us" width="150" loading="lazy"></Img></div>
-    </a>
-  </header>
+  <!-- Header --> 
+<header id="header" class="header">
+   <div id="logoImg" class="logo">
+    <img src="assets/logo.png" alt="Company Logo" width="200" loading="lazy">
+  </div>
+  
+  <!-- Desktop Navigation -->
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About Us</a>
+    <a href="pages/solutions.html">Solutions</a>
+    <a href="pages/services.html">Services</a>
+    <a href="pages/industries.html">Industries</a>
+    <a href="pages/success-stories.html">Success Stories</a>
+  </nav>
+  
+  <!-- Desktop Contact Button -->
+  <a href="pages/contact.html">
+    <div class="contactus">
+      <img src="assets/contact-us-btn.png" alt="Contact Us" width="150" loading="lazy">
+    </div>
+  </a>
+  
+  <!-- Hamburger Menu Icon (Hidden on Desktop) -->
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay (Added by JS, but can be added manually) -->
+<div class="mobile-menu-overlay"></div>
+
+<!-- Mobile Menu (Added by JS, but can be added manually) -->
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <div class="mobile-menu-logo">
+      <!-- <img src="assets/logo.png" alt="Inseyab Logo"> -->
+    </div>
+    <div class="close-icon", id="closeMenuIcon">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- <div class="mobile-menu-label">Menu</div> -->
+  <a href="index.html" class="active">Home</a>
+  <a href="pages/about.html">About Us</a>
+  <a href="pages/solutions.html">Solutions</a>
+  <a href="pages/services.html">Services</a>
+  <a href="pages/industries.html">Industries</a>
+  <a href="pages/success-stories.html">Success Stories</a>
+  <a href="pages/contact.html">Contact Us</a>
+</div>
   <!-- End Header -->
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="heading-div">
-      <h1 class="heading">AI-First Business Intelligence for a <span class="highlight" id="typeText">Data-Driven
-          Future</span></h1>
+      <h1 class="heading">AI-First Business Intelligence for a </h1>
+      <h1 class="highlight" id="typeText">Data-Driven Future</h1>
     </div>
     <div class="sub-heading-div">
       <p class="sub-heading">Inseyab helps enterprises and governments turn complex data into actionable insights using
@@ -48,7 +87,6 @@
   <!-- Trusted Section -->
   <section class="trusted-section animate-on-scroll">
     <div class="container">
-
       <h2 class="title">
         <span class="highlight2">Inseyab was founded to bridge the gap between organizations and their data.</span> At
         Inseyab, we make insights simple and accessible—removing the complexity of traditional BI tools with intuitive
@@ -59,7 +97,7 @@
         Trusted by 70+ companies across the world
       </p>
 
-      <div class="brands-img-div"><img class="brands-img" src="assets/brands.png" ,alt='trusted by companies'></div>
+      <div class="brands-img-div"><img class="brands-img"  id="brandsImage" src="assets/brands-mobile.png"alt='trusted by companies'></div>
     </div>
   </section>
   <!-- End Trusted Section -->
@@ -293,8 +331,7 @@
           <h1 class="heading6">Why Choose <span class="highlight7">Inseyab? </span></h1>
         </div>
         <div class="subtitle7-div">
-          <p class="subtitle7">From defense to finance to agriculture — we design AI-powered solutions tailored to
-            real-world challenges in every sector.</p>
+          <p class="subtitle7">We bridge the gap between complex data & real-world action with scalable, AI-first solutions designed for speed, security, & impact.</p>
         </div>
         <div class="explore-usecase-btn">
           <img src="assets/icons/ic-arrow-up.png" alt="">

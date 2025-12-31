@@ -1,6 +1,10 @@
 const header = document.getElementById('header');
 const logoImg = document.getElementById('logoImg');
+const brandsImage = document.getElementById('brandsImage');
 
+
+const brandImageDesktop = "assets/images/brands.png";
+const brandImageMobile = "assets/images/brands-mobile.png";
 const defaultLogo = "../assets/logo-2.png";
 const stickyLogo = "../assets/logo.png";
 
@@ -15,8 +19,189 @@ window.addEventListener('scroll', () => {
   }
 });
 
+
+// Mobile Menu Toggle
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("======DOcument loaded");
+  // Create mobile menu elements
+  createMobileMenu();
+  
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+  const closeMenuIcon = document.getElementById('closeMenuIcon')
+  
+  console.log('Hamburger:', hamburger);
+  console.log('Mobile Menu:', mobileMenu);
+  console.log('Overlay:', mobileMenuOverlay);
+  console.log('Close Menu:', closeMenuIcon);
+
+  // Toggle mobile menu
+  if (hamburger) {
+    hamburger.addEventListener('click', function(e) {
+      e.preventDefault();
+      console.log('Hamburger clicked');
+      
+      hamburger.classList.toggle('active');
+      
+      if (mobileMenu) {
+        mobileMenu.classList.toggle('active');
+        console.log('Menu toggled, active:', mobileMenu.classList.contains('active'));
+      }
+      
+      if (mobileMenuOverlay) {
+        mobileMenuOverlay.classList.toggle('active');
+      }
+      
+      // Prevent body scroll when menu is open
+      if (mobileMenu && mobileMenu.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // Close menu when clicking overlay
+  if (mobileMenuOverlay) {
+    mobileMenuOverlay.addEventListener('click', function(e) {
+      console.log('Overlay clicked');
+      closeMobileMenu();
+    });
+  }
+
+  // Close menu when clicking on close icon
+  if(closeMenuIcon) {
+    closeMenuIcon.addEventListener('click', function(e) {
+      console.log('Close Icon Clicked');
+      closeMobileMenu();
+    });
+  }
+
+  // Close menu when clicking a link
+  if (mobileMenu) {
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        console.log('Link clicked');
+        closeMobileMenu();
+      });
+    });
+  }
+
+  // Close menu on escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('active')) {
+      closeMobileMenu();
+    }
+  });
+
+  function closeMobileMenu() {
+    console.log('Closing menu');
+    if (hamburger) hamburger.classList.remove('active');
+    if (mobileMenu) mobileMenu.classList.remove('active');
+    if (mobileMenuOverlay) mobileMenuOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+});
+
+// Function to create mobile menu structure
+function createMobileMenu() {
+  console.log('Creating mobile menu...');
+  
+  // Check if mobile menu already exists
+  // if (document.querySelector('.mobile-menu')) {
+  //   console.log('Mobile menu already exists');
+  //   return;
+  // }
+
+  // Create overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'mobile-menu-overlay';
+  document.body.appendChild(overlay);
+  console.log('Overlay created');
+
+  // Create mobile menu
+  const mobileMenu = document.createElement('div');
+  mobileMenu.className = 'mobile-menu';
+
+  // Add "Menu" label
+  const menuLabel = document.createElement('div');
+  menuLabel.className = 'mobile-menu-label';
+  menuLabel.textContent = 'Menu';
+  mobileMenu.appendChild(menuLabel);
+
+  // Get navigation links from desktop nav
+  const desktopNav = document.querySelector('.nav') || document.querySelector('.nav2');
+  console.log('Desktop nav found:', desktopNav);
+  
+  const navLinks = document.querySelectorAll(".nav a");;
+  console.log('Nav links found:', navLinks.length);
+
+  // Clone navigation links and set active state
+  const currentPage = window.location.pathname.split('/').pop();
+  
+  navLinks.forEach(link => {
+    const mobileLink = link.cloneNode(true);
+    mobileLink.style.margin = '0';
+    
+    // Set active class based on current page
+    const linkPath = link.getAttribute("href").split("/").pop();
+
+    if (
+      (currentPage === "" || currentPage === "index.html") &&
+      linkPath === "index.html"
+    ) {
+      link.classList.add("active");
+    }
+
+    if (linkPath === currentPage) {
+      link.classList.add("active");
+    }
+    
+    mobileMenu.appendChild(mobileLink);
+  });
+
+  document.body.appendChild(mobileMenu);
+  console.log('Mobile menu created and appended');
+
+  // Add hamburger to headers if not exists
+  addHamburgerToHeaders();
+}
+
+// Function to add hamburger icon to headers
+function addHamburgerToHeaders() {
+  const headers = document.querySelectorAll('.header, .header2');
+  console.log('Headers found:', headers.length);
+  
+  headers.forEach(header => {
+    // Check if hamburger already exists
+    if (header.querySelector('.hamburger')) {
+      console.log('Hamburger already exists in header');
+      return;
+    }
+
+    const hamburger = document.createElement('div');
+    hamburger.className = 'hamburger';
+    hamburger.innerHTML = '<span></span><span></span><span></span>';
+    
+    // Insert hamburger at the end of header
+    header.appendChild(hamburger);
+    console.log('Hamburger added to header');
+  });
+}
+
 /// Header Navigation
 document.addEventListener("DOMContentLoaded", () => {
+  /// Brand Image Change on mobile and desktop
+  if(brandsImage){
+    if (window.innerWidth < 768) {
+    brandsImage.src = brandImageMobile;
+  } else {
+     brandsImage.src = brandImageDesktop;
+  }
+  }
+
   const navLinks = document.querySelectorAll(".nav a");
   const currentPath = window.location.pathname.split("/").pop();
 
@@ -35,6 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add("active");
     }
   });
+  
 
   // SMOOTH PAGE SWITCH
   navLinks.forEach(link => {
@@ -56,6 +242,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
 /// Heading Typing Animation
 const texts = [
   "Data-Driven Future",
@@ -73,30 +261,33 @@ let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 
-function typeEffect() {
-  const currentText = texts[textIndex];
 
-  if (!isDeleting) {
-    typeElement.textContent = currentText.substring(0, charIndex + 1);
-    charIndex++;
+if (typeElement) {
+  function typeEffect() {
+    const currentText = texts[textIndex];
 
-    if (charIndex === currentText.length) {
-      setTimeout(() => (isDeleting = true), delayBetweenTexts);
+    if (!isDeleting) {
+      typeElement.textContent = currentText.substring(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === currentText.length) {
+        setTimeout(() => (isDeleting = true), delayBetweenTexts);
+      }
+    } else {
+      typeElement.textContent = currentText.substring(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+      }
     }
-  } else {
-    typeElement.textContent = currentText.substring(0, charIndex - 1);
-    charIndex--;
 
-    if (charIndex === 0) {
-      isDeleting = false;
-      textIndex = (textIndex + 1) % texts.length;
-    }
+    setTimeout(typeEffect, isDeleting ? erasingSpeed : typingSpeed);
   }
 
-  setTimeout(typeEffect, isDeleting ? erasingSpeed : typingSpeed);
+  document.addEventListener("DOMContentLoaded", typeEffect);
 }
-
-document.addEventListener("DOMContentLoaded", typeEffect);
 
 
 /// Global Animation - Appear as we reach the section
@@ -153,11 +344,22 @@ const rightArrow = document.querySelector(".arrow-right");
 
 const slides = document.querySelectorAll(".solution-item");
 const slideGap = 30; // same as CSS gap
-const visibleSlides = 3; // number of visible slides
-const maxIndex = slides.length - visibleSlides;
 let currentIndex = 0;
+let visibleSlides = getVisibleSlides();
+let maxIndex = slides.length - visibleSlides;
 
-// Update arrow states (opacity 10% if disabled)
+// Determine number of visible slides based on screen width
+function getVisibleSlides() {
+  if (window.innerWidth < 768) {
+    return 1; // mobile
+  } else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
+    return 2; // tablet
+  } else {
+    return 3; // desktop
+  }
+}
+
+// Update arrow states
 function updateArrows() {
   leftArrow.classList.toggle("arrow-disabled", currentIndex === 0);
   rightArrow.classList.toggle("arrow-disabled", currentIndex === maxIndex);
@@ -166,30 +368,36 @@ function updateArrows() {
 // Slide to current index
 function slideToIndex() {
   const slideWidth = slides[0].offsetWidth + slideGap;
- solutionSlider.scrollTo({
+  solutionSlider.scrollTo({
     left: slideWidth * currentIndex,
     behavior: "smooth",
   });
   updateArrows();
 }
 
-// Arrow click events
-rightArrow.addEventListener("click", () => {
-  if (currentIndex < maxIndex) {
-    currentIndex++;
-    slideToIndex();
-  }
-});
+if (leftArrow && rightArrow && solutionSlider && slides.length) {
+  rightArrow.addEventListener("click", () => {
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+      slideToIndex();
+    }
+  });
 
-leftArrow.addEventListener("click", () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    slideToIndex();
-  }
-});
+  leftArrow.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      slideToIndex();
+    }
+  });
+}
 
-// Initial arrow state
-updateArrows();
+// Update visible slides on window resize
+window.addEventListener("resize", () => {
+  visibleSlides = getVisibleSlides();
+  maxIndex = slides.length - visibleSlides;
+  if (currentIndex > maxIndex) currentIndex = maxIndex;
+  slideToIndex();
+});
 
 
 
@@ -216,6 +424,8 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
+
+  if (!slides.length) return;
 
   if (n > slides.length) {
     slideIndex = 1;
@@ -412,3 +622,5 @@ faqItems.forEach(item => {
     icon.textContent = item.classList.contains("active") ? "×" : "+";
   });
 });
+
+

@@ -1,5 +1,7 @@
 const tabs = document.querySelectorAll(".mission-tab-inside");
 
+
+
 const content = {
   mission: {
     title: "Mission",
@@ -30,3 +32,6 @@ tabs.forEach(tab => {
     document.getElementById("tabImage").src = content[type].image;
   });
 });
+
+
+
