@@ -167,3 +167,104 @@
     color: var(--hintTextColor);
     line-height: 1.6;
 }
+
+/* ======================================= TABLET RESPONSIVE ================================================ */
+@media (max-width: 1199px){
+    .key-feature-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+}
+
+
+/* ======================================= MOBILE RESPONSIVE ================================================ */
+@media (max-width: 768px){
+    
+/* Hero Section */
+.hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.heading-div {
+    padding: 10px 0px;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+.sub-heading-div {
+    width: 100%;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--whiteColor);
+}
+
+.section-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+
+.value-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.value-props {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+.value-props li {
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.value-props li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--secondaryColor);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.key-feature-section {
+    padding: 20px 20px;
+}
+
+.key-feature-wrapper {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.key-feature img {
+    width: 35px;
+    height: 35px;
+}
+
+.key-feature h3 {
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.key-feature p {
+    font-size: 0.90rem;
+}
+
+}
