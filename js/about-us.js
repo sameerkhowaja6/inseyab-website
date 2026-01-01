@@ -1,4 +1,21 @@
 const tabs = document.querySelectorAll(".mission-tab-inside");
+const brandsImage2 = document.getElementById('brandsImage2');
+
+
+const brandImageDesktop2 = "../assets/images/brands.png";
+const brandImageMobile2 = "../assets/images/brands-mobile.png";
+
+document.addEventListener("DOMContentLoaded",()=>{
+    /// Brand Image Change on mobile and desktop
+  if(brandsImage2){
+    if (window.innerWidth < 768) {
+    brandsImage2.src = brandImageMobile2;
+  } else {
+     brandsImage2.src = brandImageDesktop2;
+  }
+  }
+})
+
 
 const content = {
   mission: {
@@ -30,3 +47,6 @@ tabs.forEach(tab => {
     document.getElementById("tabImage").src = content[type].image;
   });
 });
+
+
+
