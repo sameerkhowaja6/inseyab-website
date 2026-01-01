@@ -14,21 +14,60 @@
 <body>
 
     <!-- Header -->
-    <header id="header" class="header2">
-        <div class="logoImg"><Img src="../assets/logo-2.png" alt="Company Logo" width="200" loading="lazy"   id="logoImg"></Img></div>
-        <nav class="nav2 nav">
-            <a href="../index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="solutions.html">Solutions</a>
-            <a href="services.html">Services</a>
-            <a href="industries.html">Industries</a>
-            <a href="success-stories.html">Success Stories</a>
-        </nav>
-        <a href="contact.html">
-            <div class="contactus"><Img src="../assets/contact-us-btn.png" alt="Contact Us" width="150"
-                    loading="lazy"></Img></div>
-        </a>
-    </header>
+   
+   <header id="header" class="header2">
+   <div  class="logo">
+    <img id="logoImg" src="../assets/logo-2.png" alt="Company Logo" width="200" loading="lazy">
+  </div>
+  
+  <!-- Desktop Navigation -->
+  <nav class="nav2 nav">
+    <a href="../index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="services.html">Services</a>
+    <a href="industries.html">Industries</a>
+    <a href="success-stories.html">Success Stories</a>
+  </nav>
+  
+  <!-- Desktop Contact Button -->
+  <a href="contact.html">
+    <div class="contactus">
+      <img src="../assets/contact-us-btn.png" alt="Contact Us" width="150" loading="lazy">
+    </div>
+  </a>
+  
+  <!-- Hamburger Menu Icon (Hidden on Desktop) -->
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay (Added by JS, but can be added manually) -->
+<div class="mobile-menu-overlay"></div>
+
+<!-- Mobile Menu (Added by JS, but can be added manually) -->
+<div class="mobile-menu">
+  <div class="mobile-menu-header">
+    <div class="mobile-menu-logo">
+      <!-- <img src="assets/logo.png" alt="Inseyab Logo"> -->
+    </div>
+    <div class="close-icon", id="closeMenuIcon">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  <!-- <div class="mobile-menu-label">Menu</div> -->
+  <a href="../index.html" >Home</a>
+  <a href="about.html" >About Us</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="services.html">Services</a>
+  <a href="industries.html" class="active">Industries</a>
+  <a href="success-stories.html">Success Stories</a>
+  <a href="contact.html">Contact Us</a>
+</div>
     <!-- End Header -->
 
     <!-- Industries Hero Section -->
