@@ -94,10 +94,10 @@
     /* Glass effect */
     background: var(--secondaryColor);
     box-shadow: 0 8px 16px color-mix(in srgb, var(--primaryColor), transparent 50%);
-     transition: 
-    transform 0.4s ease,
-    box-shadow 0.4s ease,
-    backdrop-filter 0.4s ease;
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        backdrop-filter 0.4s ease;
 }
 
 .service-title-div {
@@ -117,6 +117,7 @@
 }
 
 .service-description {
+    height: 120px;
     padding-top: 20px;
     text-align: left;
     font-size: 24px;
@@ -128,4 +129,298 @@
 .service-anchor::before,
 .service-anchor::after {
     color: var(--whiteColor);
-    text-decoration: none;   }
+    text-decoration: none;
+}
+/* ======================================= DESKTOP RESPONSIVE ================================================ */
+@media (max-width: 1440px){
+    .heading-div {
+    padding: 30px 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading-div {
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--whiteColor);
+}
+
+.services-highlight {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+
+.sub-heading-div {
+    width: 80%;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--whiteColor);
+}
+
+.services-grid {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.service-item {
+    padding: 20px;
+    border: 1px solid var(--whiteColor);
+    border-radius: 25px;
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.service-item:hover {
+    border: 2px solid var(--primaryColor);
+    /* Glass effect */
+    background: var(--secondaryColor);
+    box-shadow: 0 8px 16px color-mix(in srgb, var(--primaryColor), transparent 50%);
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        backdrop-filter 0.4s ease;
+}
+
+.service-title-div {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.service-title-div img {
+    width: 45px;
+    height: 45px;
+}
+
+.service-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.service-description {
+    height: 120px;
+    padding-top: 20px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--whiteColor);
+}
+}
+
+
+/* ======================================= TABLET RESPONSIVE ================================================ */
+@media (max-width: 1199px) {
+    .heading-div {
+        padding: 20px 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .heading-div {
+        align-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .services-highlight {
+        font-size: 2rem;
+    }
+
+
+    .sub-heading-div {
+        width: 80%;
+        align-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .services-grid {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .service-item {
+        height: fit-content;
+        padding: 15px;
+        border: 1px solid var(--whiteColor);
+        border-radius: 20px;
+        /* Glass effect */
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    .service-item:hover {
+        border: 2px solid var(--primaryColor);
+        /* Glass effect */
+        background: var(--secondaryColor);
+        box-shadow: 0 8px 16px color-mix(in srgb, var(--primaryColor), transparent 50%);
+        transition:
+            transform 0.4s ease,
+            box-shadow 0.4s ease,
+            backdrop-filter 0.4s ease;
+    }
+
+    .service-title-div {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .service-title-div img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .service-title {
+        font-size: 1.3rem;
+        text-align: start;
+        font-weight: 700;
+    }
+
+    .service-description {
+        height: 120px;
+        padding-top: 10px;
+        text-align: left;
+        font-size: 1.1rem;
+        font-weight: normal;
+        color: var(--whiteColor);
+    }
+
+    .service-anchor,
+    .service-anchor::before,
+    .service-anchor::after {
+        color: var(--whiteColor);
+        text-decoration: none;
+    }
+}
+/* ======================================= MOBILE RESPONSIVE ================================================ */
+@media (max-width: 768px) {
+
+    .heading-div {
+        padding: 10px 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .heading-div {
+        align-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .services-highlight {
+        font-size: 2rem;
+    }
+
+
+    .sub-heading-div {
+        width: 100%;
+        align-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .services-grid {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .service-item {
+        padding: 15px;
+        border: 1px solid var(--whiteColor);
+        border-radius: 20px;
+        /* Glass effect */
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    .service-item:hover {
+        border: 2px solid var(--primaryColor);
+        /* Glass effect */
+        background: var(--secondaryColor);
+        box-shadow: 0 8px 16px color-mix(in srgb, var(--primaryColor), transparent 50%);
+        transition:
+            transform 0.4s ease,
+            box-shadow 0.4s ease,
+            backdrop-filter 0.4s ease;
+    }
+
+    .service-title-div {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .service-title-div img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .service-title {
+        font-size: 1.2rem;
+        text-align: start;
+        font-weight: 700;
+    }
+
+    .service-description {
+        height: 120px;
+        padding-top: 10px;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: normal;
+        color: var(--whiteColor);
+    }
+
+    .service-anchor,
+    .service-anchor::before,
+    .service-anchor::after {
+        color: var(--whiteColor);
+        text-decoration: none;
+    }
+}
