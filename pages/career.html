@@ -17,7 +17,11 @@
 <body>
     <!-- Header -->
     <header id="header" class="header">
-        <div class="logo"><Img src="../assets/logo.png" alt="Company Logo" width="200" loading="lazy"></Img></div>
+        <div class="logo">
+            <img id="logoImg" src="../assets/logo.png" alt="Company Logo" width="200" loading="lazy">
+        </div>
+
+        <!-- Desktop Navigation -->
         <nav class="nav">
             <a href="../index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -26,11 +30,45 @@
             <a href="industries.html">Industries</a>
             <a href="success-stories.html">Success Stories</a>
         </nav>
+
+        <!-- Desktop Contact Button -->
         <a href="contact.html">
-            <div class="contactus"><Img src="../assets/contact-us-btn.png" alt="Contact Us" width="150"
-                    loading="lazy"></Img></div>
+            <div class="contactus">
+                <img src="../assets/contact-us-btn.png" alt="Contact Us" width="150" loading="lazy">
+            </div>
         </a>
+
+        <!-- Hamburger Menu Icon (Hidden on Desktop) -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+
+    <!-- Mobile Menu Overlay (Added by JS, but can be added manually) -->
+    <div class="mobile-menu-overlay"></div>
+
+    <!-- Mobile Menu (Added by JS, but can be added manually) -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="mobile-menu-logo">
+                <!-- <img src="assets/logo.png" alt="Inseyab Logo"> -->
+            </div>
+            <div class="close-icon" , id="closeMenuIcon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- <div class="mobile-menu-label">Menu</div> -->
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="services.html">Services</a>
+        <a href="industries.html">Industries</a>
+        <a href="success-stories.html">Success Stories</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
     <!-- End Header -->
 
     <!-- Hero Section -->
@@ -70,33 +108,33 @@
                     <div class="row two">
                         <div class="form-group">
                             <label for="first_name">First Name</label>
-                            <input type="text" name="first_name" placeholder="Enter your first name" required>
+                            <input id="firstName" type="text" name="first_name" placeholder="Enter your first name" required>
                         </div>
                           <div class="form-group">
                             <label for="last_name">Last Name</label>
-                            <input type="text" name="last_name" placeholder="Enter your last name" required>
+                            <input id="lastName" type="text" name="last_name" placeholder="Enter your last name" required>
                         </div>
                     </div>
 
                     <div class="row two">
                         <div class="form-group">
                             <label for="email_address">Email</label>
-                            <input type="email" name="email_address" placeholder="Enter your email" required>
+                            <input id="email" type="email" name="email_address" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Contact Number</label>
-                            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                            <input id="phone" type="tel" name="phone" placeholder="Enter your phone number" required>
                         </div>
                     </div>
 
                     <div class="row two">
                         <div class="form-group">
                             <label for="city">City</label>
-                            <input type="text" name="city" placeholder="Enter your city">
+                            <input id="city" type="text" name="city" placeholder="Enter your city">
                         </div>
                         <div class="form-group">
                             <label for="linkedin">LinkedIn URL (Optional)</label>
-                            <input type="url" name="linkedin" placeholder="Enter linkedin URL">
+                            <input id="linkedin" type="url" name="linkedin" placeholder="Enter linkedin URL">
                         </div>
 
                     </div>
@@ -110,11 +148,14 @@
                     <div class="row">
                         <div class="form-group">
                             <label for="message">Message (Optional)</label>
-                            <textarea name="message" placeholder="Tell us why you’d like to join our team..."></textarea>
+                            <textarea id="message" name="message" placeholder="Tell us why you’d like to join our team..."></textarea>
                         </div>
                     </div>
 
-                    <button type="submit">Submit Application</button>
+                     <button class="submit-button" type="submit">
+                            <span class="btn-text">Submit Application</span>
+                            <span class="btn-loader"></span>
+                        </button>
                 </form>
             </div>
 
