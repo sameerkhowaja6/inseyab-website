@@ -4058,6 +4058,7 @@ body.fade-out {
   }
 
   .cta-illustration img {
+    order: -1;
     padding-top: 20px;
     width: 100%;
     height: 200px;
@@ -4077,7 +4078,7 @@ body.fade-out {
 
   .footer-left img {
     width: 120px;
-    height: 70px;
+    height: 60px;
   }
 
   .footer-left p {
