@@ -1,70 +1,96 @@
-// document.getElementById('contactForm').addEventListener('submit', function (e) {
-//     e.preventDefault();
-
-//     // Get form values
-//     const formData = {
-//         firstName: document.getElementById('firstName').value,
-//         lastName: document.getElementById('lastName').value,
-//         email: document.getElementById('email').value,
-//         subject: document.getElementById('subject').value,
-//         message: document.getElementById('message').value
-//     };
-
-//     // Here you can add code to send the form data to a server
-//     console.log('Form submitted with data:', formData);
-
-//     // Show success message
-//     alert('Form submitted successfully!');
-
-//     // Reset form
-//     this.reset();
-// });
 
 document.getElementById('contactForm').addEventListener('submit', async function (e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    const checkbox = document.getElementById('termsCheckbox');
-    const button = document.querySelector('.submit-button');
+  const checkbox = document.getElementById('termsCheckbox');
+  const button = this.querySelector('.submit-button');
 
-    if (!checkbox.checked) {
-        alert('Please agree to the terms and privacy policy.');
-        return;
+  if (!checkbox.checked) {
+    alert('Please agree to the terms and privacy policy.');
+    return;
+  }
+
+  const formData = {
+    formType: 'contact', 
+    firstName: document.getElementById('firstName').value.trim(),
+    lastName: document.getElementById('lastName').value.trim(),
+    email: document.getElementById('email').value.trim(),
+    subject: document.getElementById('subject').value.trim(),
+    message: document.getElementById('message').value.trim()
+  };
+
+  button.classList.add('loading');
+  button.disabled = true;
+
+  try {
+    const response = await fetch('http://localhost:3000/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      alert('Message sent successfully!');
+      this.reset();
+    } else {
+      alert('Failed to send message. Please try again.');
     }
-
-    const formData = {
-        firstName: document.getElementById('firstName').value.trim(),
-        lastName: document.getElementById('lastName').value.trim(),
-        email: document.getElementById('email').value.trim(),
-        subject: document.getElementById('subject').value.trim(),
-        message: document.getElementById('message').value.trim()
-    };
-
-    // Show loader
-    button.classList.add('loading');
-    button.disabled = true;
-
-    try {
-        const response = await fetch('http://localhost:3000/send-email', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData)
-        });
-
-        const result = await response.json();
-
-        if (result.success) {
-            alert('Message sent successfully!');
-            this.reset();
-        } else {
-            alert('Failed to send message. Please try again.');
-        }
-    } catch (error) {
-        alert('Server error. Please try later.');
-    } finally {
-        button.classList.remove('loading');
-        button.disabled = false;
-    }
+  } catch (error) {
+    alert('Server error. Please try later.');
+  } finally {
+    button.classList.remove('loading');
+    button.disabled = false;
+  }
 });
+
+/// ============ OLD
+// document.getElementById('contactForm').addEventListener('submit', async function (e) {
+//     e.preventDefault();
+
+//     const checkbox = document.getElementById('termsCheckbox');
+//     const button = document.querySelector('.submit-button');
+
+//     if (!checkbox.checked) {
+//         alert('Please agree to the terms and privacy policy.');
+//         return;
+//     }
+
+//     const formData = {
+//         firstName: document.getElementById('firstName').value.trim(),
+//         lastName: document.getElementById('lastName').value.trim(),
+//         email: document.getElementById('email').value.trim(),
+//         subject: document.getElementById('subject').value.trim(),
+//         message: document.getElementById('message').value.trim()
+//     };
+
+//     // Show loader
+//     button.classList.add('loading');
+//     button.disabled = true;
+
+//     try {
+//         const response = await fetch('http://localhost:3000/send-email', {
+//             method: 'POST',
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify(formData)
+//         });
+
+//         const result = await response.json();
+
+//         if (result.success) {
+//             alert('Message sent successfully!');
+//             this.reset();
+//         } else {
+//             alert('Failed to send message. Please try again.');
+//         }
+//     } catch (error) {
+//         alert('Server error. Please try later.');
+//     } finally {
+//         button.classList.remove('loading');
+//         button.disabled = false;
+//     }
+// });
 
 
 
