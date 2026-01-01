@@ -1,85 +1,85 @@
 :root {
-    --primaryColor: #DEB341;
-    --secondaryColor: #233F4D;
-    --tertioryColor: #0E1B21;
-    --secondaryColor2: #36657D;
-    --whiteColor: #FFFFFF;
-    --blackColor: #000000;
-    --hintTextColor: #626262;
-    --borderColor: #EEEEEE;
-    --cardColor: #FAFAFA;
+  --primaryColor: #DEB341;
+  --secondaryColor: #233F4D;
+  --tertioryColor: #0E1B21;
+  --secondaryColor2: #36657D;
+  --whiteColor: #FFFFFF;
+  --blackColor: #000000;
+  --hintTextColor: #626262;
+  --borderColor: #EEEEEE;
+  --cardColor: #FAFAFA;
 }
 
 /* Industries Hero CSS */
 .industries-hero {
-    background-image: url("../assets/industries-hero-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-content: end;
-    height: 750px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 3rem;
-    border-radius: 50px;
-    margin-top: 120px;
-    margin-left: 80px;
-    margin-right: 80px;
+  background-image: url("../assets/industries-hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-content: end;
+  height: 750px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 3rem;
+  border-radius: 50px;
+  margin-top: 120px;
+  margin-left: 80px;
+  margin-right: 80px;
 
 }
 
 .industries-header-content {
-    display: flex;
-    justify-content: space-between;
-    align-content: end;
-    align-items: end;
+  display: flex;
+  justify-content: space-between;
+  align-content: end;
+  align-items: end;
 }
 
 .industries-heading-div {
-    width: 50%;
+  width: 50%;
 }
 
 .industries-heading-div h1 {
-    width: 70%;
-    font-size: 64px;
-    font-weight: 600;
-    color: var(--whiteColor);
+  width: 70%;
+  font-size: 64px;
+  font-weight: 600;
+  color: var(--whiteColor);
 }
 
 .industries-highlight {
-    font-size: 64px;
-    font-weight: 600;
-    color: var(--primaryColor);
+  font-size: 64px;
+  font-weight: 600;
+  color: var(--primaryColor);
 }
 
 .industries-sub-heading-div {
-    padding-top: 20px;
-    width: 70%;
+  padding-top: 20px;
+  width: 70%;
 }
 
 .industries-sub-heading-div {
-    font-size: 32px;
-    font-weight: 500;
-    color: var(--whiteColor);
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--whiteColor);
 }
 
 .arrow-button img {
-    width: 70px;
-    height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 
 /* Description Section CSS */
-.description-section{
-    padding: 50px 80px;
+.description-section {
+  padding: 50px 80px;
 }
 
 .more-about-inseyab img {
-    width: 10%;
+  width: 10%;
 }
 
 .description-title {
-    text-align: center;
+  text-align: center;
 }
 
 
@@ -90,8 +90,14 @@
   background-color: color-mix(in srgb, var(--secondaryColor), transparent 90%);
 }
 
+.container3 {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
 .solution-section-header {
-    display: block;
+  display: block;
 }
 
 .heading3 {
@@ -170,7 +176,7 @@
   height: 50px;
   padding: 12px;
   border-radius: 1000px;
-  background-color:var(--secondaryColor);
+  background-color: var(--secondaryColor);
 }
 
 .arrow-left img {
@@ -182,7 +188,7 @@
   height: 50px;
   padding: 12px;
   border-radius: 1000px;
-  background-color:var(--secondaryColor);
+  background-color: var(--secondaryColor);
 }
 
 .arrow-right img {
@@ -199,7 +205,8 @@
 
 /* Each slide */
 .solution-item {
-   flex: 0 0 calc((100% - 60px) / 3); /* subtract total gap between 3 slides */
+  flex: 0 0 calc((100% - 60px) / 3);
+  /* subtract total gap between 3 slides */
   display: flex;
   flex-direction: column;
   transition: transform 0.4s ease;
@@ -213,44 +220,44 @@
 
 /* Use-Case Section */
 .usecase-section {
-    padding: 50px 80px;
-    background-color: transparent;
+  padding: 50px 80px;
+  background-color: transparent;
 }
 
 
 /* Milestone Section CSS */
 
 .milestone-section {
-    padding: 50px 50px;
-    margin: 50px 80px;
-    background-image: linear-gradient(to bottom right, var(--secondaryColor), var(--secondaryColor2));
-    border-radius: 50px;
-     display: flex;
-  flex-direction: column;    
-  align-items: center;       
+  padding: 50px 50px;
+  margin: 50px 80px;
+  background-image: linear-gradient(to bottom right, var(--secondaryColor), var(--secondaryColor2));
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-    
+
 }
 
 .milestone-heading {
-    width: 40%;
-    font-size: 48px;
-    font-weight: 600;
-    color: var(--whiteColor);
+  width: 40%;
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--whiteColor);
 }
 
 .milestone-highlight {
-    font-size: 48px;
-    font-weight: 600;
-    color: var(--primaryColor);
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--primaryColor);
 }
 
 .milestone-subtitle {
-    padding-top: 20px;
-    width: 56%;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--whiteColor);
+  padding-top: 20px;
+  width: 56%;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--whiteColor);
 }
 
 .explore-usecase2-btn {
@@ -279,7 +286,7 @@
 }
 
 .milestone-stats-grid {
-     padding-top: 30px;
+  padding-top: 30px;
   margin: 0 auto;
   width: 100%;
   display: grid;
@@ -288,39 +295,40 @@
 }
 
 .milestone-stats {
-    display: flex;
-    justify-content: start;
-    width: 100%;
-    align-items: start;
-    padding: 15px;
-    border-radius: 16px;
-    background-color: color-mix(in srgb, var(--whiteColor), transparent 90%);
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  align-items: start;
+  padding: 15px;
+  border-radius: 16px;
+  background-color: color-mix(in srgb, var(--whiteColor), transparent 90%);
 }
 
 .stats-line {
-    width: 3px;
-    height: 80px;
-    border-radius: 50px;
-    background-color: var(--primaryColor);
+  width: 3px;
+  height: 80px;
+  border-radius: 50px;
+  background-color: var(--primaryColor);
 }
 
-.stats-data{
-    justify-content: start;
-    text-align: left;
-    padding-left: 10px;
+.stats-data {
+  justify-content: start;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .stats-no {
-    font-size: 60px;
-    line-height: 1;
-    font-weight: 500;
-    color: var(--whiteColor);
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--whiteColor);
 }
 
 .stats-desc {
-    font-size: 14px;
-    font-weight: 400;
-    color: color-mix(in srgb, var(--whiteColor), transparent 30%);;
+  font-size: 14px;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--whiteColor), transparent 30%);
+  ;
 }
 
 
@@ -420,7 +428,7 @@
 
 .industries-faq-answer p {
   padding: 0 0 18px 0;
-  color:var(--hintTextColor);
+  color: var(--hintTextColor);
   font-size: 14px;
   line-height: 1.6;
 }
@@ -429,3 +437,986 @@
   max-height: 200px;
 }
 
+/* ======================================= DESKTOP RESPONSIVE ================================================ */
+@media (max-width: 1440px) {
+
+  /* Industries Hero CSS */
+  .industries-hero {
+    background-image: url("../assets/about-us-hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: end;
+    height: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 3rem;
+    border-radius: 50px;
+    margin-top: 120px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+  }
+
+  .industries-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: end;
+    align-items: end;
+  }
+
+  .industries-heading-div {
+    width: 80%;
+  }
+
+  .industries-heading-div h1 {
+    width: 80%;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+
+  .industries-highlight {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+  }
+
+  .industries-sub-heading-div {
+    padding-top: 20px;
+    width: 70%;
+  }
+
+  .industries-sub-heading-div {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--whiteColor);
+  }
+
+  .arrow-button img {
+    width: 60px;
+    height: 60px;
+  }
+
+
+  /* Description Section CSS */
+  .description-section {
+    padding: 80px 80px;
+  }
+
+  .more-about-inseyab img {
+    width: 120px;
+  }
+
+  .description-title {
+    text-align: center;
+  }
+
+
+  /* Use-Case Section */
+  .usecase-section {
+    padding: 20px 20px;
+    background-color: transparent;
+  }
+
+  /* Milestone Section CSS */
+
+  /* Milestone Section CSS */
+
+  .milestone-section {
+    padding: 30px 50px;
+    margin: 50px 80px;
+    background-image: linear-gradient(to bottom right, var(--secondaryColor), var(--secondaryColor2));
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .milestone-heading {
+    width: 80%;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+
+  .milestone-highlight {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+  }
+
+  .milestone-subtitle {
+    padding-top: 20px;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--whiteColor);
+  }
+
+  .explore-usecase2-btn {
+    margin-top: 30px;
+    padding: 5px;
+    padding-right: 30px;
+    height: 50px;
+    background-color: var(--whiteColor);
+    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    border-radius: 1000px;
+  }
+
+  .explore-usecase2-btn img {
+    height: 100%;
+  }
+
+  .explore-usecase2-btn p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--secondaryColor);
+  }
+
+  .milestone-stats-grid {
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .milestone-stats {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    align-items: start;
+    padding: 15px;
+    border-radius: 16px;
+    background-color: color-mix(in srgb, var(--whiteColor), transparent 90%);
+  }
+
+  .stats-line {
+    width: 3px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: var(--primaryColor);
+  }
+
+  .stats-data {
+    justify-content: start;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .stats-no {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--whiteColor);
+  }
+
+  .stats-desc {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: color-mix(in srgb, var(--whiteColor), transparent 30%);
+    ;
+  }
+
+
+  /* FAQ SECTION */
+  .title8-div {
+    text-align: center;
+  }
+
+  .heading8 {
+      font-size: clamp(3rem,1vw,1.5rem);
+  font-weight: 600;
+  color: var(--secondaryColor);
+  }
+
+  .highlight9 {
+  font-size: clamp(3rem,1vw,1.5rem);
+  font-weight: 600;
+  color: var(--primaryColor);
+  }
+
+  .subtitle9-div {
+    width: 35%;
+  align-content: center;
+  text-align: center;
+  margin: 0 auto;
+  }
+
+  .subtitle9 {
+     padding-top: 20px;
+  font-size: clamp(1rem,1vw,0.75rem);
+  font-weight: 400;
+  color: var(--hintTextColor);
+  }
+
+  .industries-faq-section-2 {
+   max-width: 100%;
+  margin: auto;
+  }
+
+  .industries-faq-item {
+   border-bottom: 1px solid var(--borderColor);
+  }
+
+  .industries-faq-question {
+     width: 100%;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(1rem,1vw,0.75rem);
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--secondaryColor);
+  }
+
+  .industries-faq-question .icon {
+   width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--cardColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  }
+
+  .industries-faq-item.active .icon {
+      background: var(--primaryColor);
+  color: var(--whiteColor);
+  }
+
+  .industries-faq-answer {
+    max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  }
+
+  .industries-faq-answer p {
+    padding: 0 0 18px 0;
+  color: var(--hintTextColor);
+  font-size: clamp(0.75rem,1vw,0.50rem);
+  line-height: 1.6;
+  }
+
+  .industries-faq-item.active .industries-faq-answer {
+    max-height: 200px;
+  }
+}
+
+/* ======================================= TABLET RESPONSIVE ================================================ */
+@media (max-width: 1199px) {
+
+  /* Industries Hero CSS */
+  .industries-hero {
+    background-image: url("../assets/about-us-hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: end;
+    height: 350px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+  }
+
+  .industries-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: end;
+    align-items: end;
+    gap: 10px;
+  }
+
+  .industries-heading-div {
+    width: 70%;
+  }
+
+  .industries-heading-div h1 {
+    width: 70%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+
+  .industries-highlight {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+  }
+
+  .industries-sub-heading-div {
+    padding-top: 10px;
+    width: 70%;
+  }
+
+  .industries-sub-heading-div {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--whiteColor);
+  }
+
+  .arrow-button img {
+    width: 45px;
+    height: 45px;
+  }
+
+
+  /* Description Section CSS */
+  .description-section {
+    padding: 20px 20px;
+  }
+
+  .more-about-inseyab img {
+    width: 120px;
+  }
+
+  .description-title {
+    text-align: center;
+  }
+
+  /* AI-Solution Section CSS */
+  .solution-section {
+    padding: 20px 20px;
+    background-color: color-mix(in srgb, var(--secondaryColor), transparent 90%);
+  }
+
+  .solution-section-header {
+    display: block;
+  }
+
+  .heading3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+  }
+
+  .highlight4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+  }
+
+
+  .subtitle3-div {
+    width: 100%;
+  }
+
+  .subtitle3 {
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--hintTextColor);
+  }
+
+  .subtitle4 {
+    padding-top: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--hintTextColor);
+  }
+
+
+  .solution-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .solution-item {
+    flex: 0 0 100%;
+  }
+
+  .solution-item h4 {
+    font-size: 20px;
+  }
+
+  .solution-item p {
+    font-size: 14px;
+  }
+
+  /* Use-Case Section */
+  .usecase-section {
+    padding: 20px 20px;
+    background-color: transparent;
+  }
+
+  /* Milestone Section CSS */
+
+  .milestone-section {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background-image: linear-gradient(to bottom right, var(--secondaryColor), var(--secondaryColor2));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .milestone-heading {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+
+  .milestone-highlight {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+  }
+
+  .milestone-subtitle {
+    padding-top: 10px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--whiteColor);
+  }
+
+  .explore-usecase2-btn {
+    margin-top: 20px;
+    padding: 5px;
+    padding-right: 30px;
+    height: 50px;
+    background-color: var(--whiteColor);
+    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    border-radius: 1000px;
+  }
+
+  .explore-usecase2-btn img {
+    height: 100%;
+  }
+
+  .explore-usecase2-btn p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--secondaryColor);
+  }
+
+  .milestone-stats-grid {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .milestone-stats {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    align-items: start;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: color-mix(in srgb, var(--whiteColor), transparent 90%);
+  }
+
+  .stats-line {
+    width: 2px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: var(--primaryColor);
+  }
+
+  .stats-data {
+    justify-content: center;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .stats-no {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+
+  .stats-desc {
+    font-size: 0.70rem;
+    font-weight: 400;
+    color: color-mix(in srgb, var(--whiteColor), transparent 30%);
+    ;
+  }
+
+  /* FAQ SECTION */
+  .industries-faq-section {
+    padding: 20px 20px;
+  }
+
+  .container8 {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .title8-div {
+    text-align: center;
+  }
+
+  .heading8 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+  }
+
+  .highlight9 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+  }
+
+  .subtitle9-div {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .subtitle9 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--hintTextColor);
+  }
+
+  .industries-faq-section-2 {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .industries-faq-item {
+    border-bottom: 1px solid var(--borderColor);
+  }
+
+  .industries-faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    font-size: 0.90rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--secondaryColor);
+  }
+
+  .industries-faq-question .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--cardColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+
+  .industries-faq-item.active .icon {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+  }
+
+  .industries-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .industries-faq-answer p {
+    padding: 0 0 8px 0;
+    color: var(--hintTextColor);
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .industries-faq-item.active .industries-faq-answer {
+    max-height: 200px;
+  }
+}
+
+/* ======================================= MOBILE RESPONSIVE ================================================ */
+@media (max-width: 768px) {
+
+  /* Industries Hero CSS */
+  .industries-hero {
+    background-image: url("../assets/industries-hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: end;
+    height: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+
+  .industries-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-content: end;
+    align-items: end;
+    gap: 10px;
+  }
+
+  .industries-heading-div {
+    width: 100%;
+  }
+
+  .industries-heading-div h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+
+  .industries-highlight {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+  }
+
+  .industries-sub-heading-div {
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .industries-sub-heading-div {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--whiteColor);
+  }
+
+  .arrow-button img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  /* Description Section CSS */
+  .description-section {
+    padding: 20px 20px;
+  }
+
+  .more-about-inseyab img {
+    width: 120px;
+  }
+
+  .description-title {
+    text-align: center;
+  }
+
+
+
+  /* AI-Solution Section CSS */
+  .solution-section {
+    padding: 20px 20px;
+    background-color: color-mix(in srgb, var(--secondaryColor), transparent 90%);
+  }
+
+  .solution-section-header {
+    display: block;
+  }
+
+  .heading3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+  }
+
+  .highlight4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+  }
+
+
+  .subtitle3-div {
+    width: 100%;
+  }
+
+  .subtitle3 {
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--hintTextColor);
+  }
+
+  .subtitle4 {
+    padding-top: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--hintTextColor);
+  }
+
+
+  .solution-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .solution-item {
+    flex: 0 0 100%;
+  }
+
+  .solution-item h4 {
+    font-size: 20px;
+  }
+
+  .solution-item p {
+    font-size: 14px;
+  }
+
+  /* Use-Case Section */
+  .usecase-section {
+    padding: 20px 20px;
+    background-color: transparent;
+  }
+
+  /* Milestone Section CSS */
+
+  .milestone-section {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background-image: linear-gradient(to bottom right, var(--secondaryColor), var(--secondaryColor2));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .milestone-heading {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+
+  .milestone-highlight {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+  }
+
+  .milestone-subtitle {
+    padding-top: 10px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--whiteColor);
+  }
+
+  .explore-usecase2-btn {
+    margin-top: 20px;
+    padding: 5px;
+    padding-right: 30px;
+    height: 50px;
+    background-color: var(--whiteColor);
+    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    border-radius: 1000px;
+  }
+
+  .explore-usecase2-btn img {
+    height: 100%;
+  }
+
+  .explore-usecase2-btn p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--secondaryColor);
+  }
+
+  .milestone-stats-grid {
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .milestone-stats {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    align-items: start;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: color-mix(in srgb, var(--whiteColor), transparent 90%);
+  }
+
+  .stats-line {
+    width: 2px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: var(--primaryColor);
+  }
+
+  .stats-data {
+    justify-content: center;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .stats-no {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+
+  .stats-desc {
+    font-size: 0.70rem;
+    font-weight: 400;
+    color: color-mix(in srgb, var(--whiteColor), transparent 30%);
+    ;
+  }
+
+  /* FAQ SECTION */
+  .industries-faq-section {
+    padding: 20px 20px;
+  }
+
+  .container8 {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .title8-div {
+    text-align: center;
+  }
+
+  .heading8 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+  }
+
+  .highlight9 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+  }
+
+  .subtitle9-div {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .subtitle9 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--hintTextColor);
+  }
+
+  .industries-faq-section-2 {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .industries-faq-item {
+    border-bottom: 1px solid var(--borderColor);
+  }
+
+  .industries-faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    font-size: 0.90rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--secondaryColor);
+  }
+
+  .industries-faq-question .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--cardColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+
+  .industries-faq-item.active .icon {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+  }
+
+  .industries-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .industries-faq-answer p {
+    padding: 0 0 8px 0;
+    color: var(--hintTextColor);
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .industries-faq-item.active .industries-faq-answer {
+    max-height: 200px;
+  }
+
+
+}
